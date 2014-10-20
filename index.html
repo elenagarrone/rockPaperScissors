@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<head>
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+
+		<section id="title">
+			<h1>ROCK PAPER SCISSORS</h1>
+		</section>
+		<h2 id="result"></h2>
+
+		<section class="choices"><center>
+			<IMG id="rock" SRC="images/rock.png" ALT="Image of a hand with a clanched fist">
+			<IMG id="paper"SRC="images/paper.png" ALT="Image of a hand">
+			<IMG id="scissors"SRC="images/scissors.png" ALT="Image of a hand making scissors" allign="middle">
+			</center>
+		</section>
+
+		  	<script type="text/javascript" src="src/rockPaperScissors.js"></script>
+			<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					var game = new Game
+					var draw = new Draw
+					var computer = function(){
+						choices = [new Rock, new Paper, new Scissors];
+						return choices[Math.floor(Math.random()* choices.length)];
+					};
+					var andTheWinnerIs = function(winner) {
+						if(winner.type === 'Draw')
+							$('#result').text("It's a " + Draw.type)
+						else
+							$('#result').text("The winner is " + winner.type)
+					};
+
+					$('#rock').on('click', function(){
+						andTheWinnerIs(game.winner(new Rock, computer()));
+					})
+
+					$('#paper').on('click', function(){
+						andTheWinnerIs(game.winner(new Paper, computer()));
+					})
+
+					$('#scissors').on('click', function(){
+						andTheWinnerIs(game.winner(new Scissors, computer()));
+					})
+				})
+			</script>
+	</body>
+</html>
+
