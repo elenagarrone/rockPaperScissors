@@ -10,7 +10,6 @@ describe('RPS', function(){
 
 		beforeEach(function(){
 			game = new Game
-			draw = new Draw
 		});
 
 		it('Rock beats Scissors', function(){
@@ -38,7 +37,7 @@ describe('RPS', function(){
 		});
 
 		it('Rock draws rock', function(){
-			expect(game.winner(rock, rock)).toEqual(draw);
+			expect(game.winner(rock, rock)).toEqual('Draw');
 		});
 
 	});

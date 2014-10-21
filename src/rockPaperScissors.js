@@ -21,3 +21,7 @@ Game.prototype.winner= function(choice1, choice2) {
 	if(choice1.type === choice2.type) return 'Draw';
 };
 
+Game.prototype.messages = function() {
+	
+};
+
