@@ -10,10 +10,13 @@ var decideWinner = function(playerChoice){
 };
 
 var andTheWinnerIs = function(winner) {
-	if(winner.type !== undefined)
-		$('#result').text(game.messageWin(winner))
-	else 
-		$('#result').text('It was a draw')
+	if(winner.type !== undefined) {
+		$('#result').prepend(game.messageWin(winner));
+		$('#result').prepend('<li></li>')
+	} else {
+		$('#result').prepend('It was a draw');
+		$('#result').prepend('<li></li>')}
+		
 };
 
 var playerChoice = function(choice){

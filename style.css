@@ -31,3 +31,7 @@ section#title {
 	font-size: 18px;
 	text-align: center;
 }
+
+section#showresult {
+	margin-top: 5%;
+}
