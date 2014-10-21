@@ -1,11 +1,10 @@
 var game = new Game
-var draw = new Draw
 var computer = function(){
 	choices = [new Rock, new Paper, new Scissors];
 	return choices[Math.floor(Math.random()* choices.length)];
 };
-var decideWinner = function(){
-	return game.winner(new Rock, computer())
+var decideWinner = function(playerChoice){
+	return game.winner(playerChoice, computer())
 };
 
 
@@ -24,13 +23,13 @@ var andTheWinnerIs = function(winner) {
 	// };
 
 $('#rock').on('click', function(){
-	andTheWinnerIs(decideWinner());
+	andTheWinnerIs(decideWinner(new Rock));
 })
 
 $('#paper').on('click', function(){
-	andTheWinnerIs(game.winner(new Paper, computer()));
+	andTheWinnerIs(decideWinner(new Paper));
 })
 
 $('#scissors').on('click', function(){
-	andTheWinnerIs(game.winner(new Scissors, computer()));
+	andTheWinnerIs(decideWinner(new Scissors));
 })
