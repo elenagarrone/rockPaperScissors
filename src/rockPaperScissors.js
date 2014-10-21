@@ -21,7 +21,9 @@ Game.prototype.winner= function(choice1, choice2) {
 	if(choice1.type === choice2.type) return 'Draw';
 };
 
-Game.prototype.messages = function() {
-	
+Game.prototype.messageWin = function(winChoice) {
+	if(winChoice.type === 'Rock') return 'Rock destroys scissors';
+	if(winChoice.type === 'Scissors') return 'Scissors cuts paper';
+	if(winChoice.type === 'Paper') return 'Paper covers rock';
 };
 

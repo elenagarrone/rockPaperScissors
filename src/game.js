@@ -5,17 +5,16 @@ var computer = function(){
 	return choices[Math.floor(Math.random()* choices.length)];
 };
 var decideWinner = function(playerChoice){
-	return game.winner(playerChoice, computer())
+	var computerChoice = computer()
+	return game.winner(playerChoice, computerChoice)
 };
 
-
-var andTheWinnerIs = function(winner) {
+var andTheWinnerIs = function(winner, draw) {
 	if(winner.type !== undefined)
-		$('#result').text("The winner is " + winner.type)
-	else
-		$('#result').text("It's a draw")
+		$('#result').text(game.messageWin(winner))
+	else 
+		$('#result').text('It was a draw')
 };
-
 
 var playerChoice = function(choice){
 	return options[$(choice).data('option')]

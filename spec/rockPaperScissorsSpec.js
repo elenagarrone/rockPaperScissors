@@ -57,4 +57,20 @@ describe('RPS', function(){
 		});
 	});
 
+	describe('When displaying the winner messages', function(){
+
+		it('rock vs scissors: Rock destroys scissors', function(){
+			expect(game.messageWin(rock)).toEqual("Rock destroys scissors");
+		});
+
+		it('scissors vs paper: Scissors cuts paper', function(){
+			expect(game.messageWin(scissors)).toEqual("Scissors cuts paper");
+		});
+
+		it('paper vs rock: Paper covers rock', function(){
+			expect(game.messageWin(paper)).toEqual("Paper covers rock");
+		});
+
+	});
+
 });
