@@ -1,7 +1,7 @@
-var options = {rock: new Rock, paper: new Paper, scissors: new Scissors};
+var options = {rock: new Rock('player'), paper: new Paper('player'), scissors: new Scissors('player')};
 var game = new Game
 var computer = function(){
-	choices = [new Rock, new Paper, new Scissors];
+	choices = [new Rock('computer'), new Paper('computer'), new Scissors('computer')];
 	return choices[Math.floor(Math.random()* choices.length)];
 };
 var decideWinner = function(playerChoice){
@@ -9,7 +9,7 @@ var decideWinner = function(playerChoice){
 	return game.winner(playerChoice, computerChoice)
 };
 
-var andTheWinnerIs = function(winner, draw) {
+var andTheWinnerIs = function(winner) {
 	if(winner.type !== undefined)
 		$('#result').text(game.messageWin(winner))
 	else 

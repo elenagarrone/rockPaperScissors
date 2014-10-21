@@ -1,9 +1,9 @@
 describe('RPS', function(){
 
 		beforeEach(function(){
-			rock = new Rock
-			scissors = new Scissors
-			paper = new Paper
+			rock = new Rock('player')
+			scissors = new Scissors('player')
+			paper = new Paper('computer')
 		});
 
 	describe('Playing the game', function(){
@@ -60,15 +60,15 @@ describe('RPS', function(){
 	describe('When displaying the winner messages', function(){
 
 		it('rock vs scissors: Rock destroys scissors', function(){
-			expect(game.messageWin(rock)).toEqual("Rock destroys scissors");
+			expect(game.messageWin(rock)).toEqual("You win! Rock destroys scissors");
 		});
 
 		it('scissors vs paper: Scissors cuts paper', function(){
-			expect(game.messageWin(scissors)).toEqual("Scissors cuts paper");
+			expect(game.messageWin(scissors)).toEqual("You win! Scissors cuts paper");
 		});
 
 		it('paper vs rock: Paper covers rock', function(){
-			expect(game.messageWin(paper)).toEqual("Paper covers rock");
+			expect(game.messageWin(paper)).toEqual("The computer win! Paper covers rock");
 		});
 
 	});
