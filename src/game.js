@@ -1,3 +1,4 @@
+var options = {rock: new Rock, paper: new Paper, scissors: new Scissors};
 var game = new Game
 var computer = function(){
 	choices = [new Rock, new Paper, new Scissors];
@@ -15,21 +16,11 @@ var andTheWinnerIs = function(winner) {
 		$('#result').text("It's a draw")
 };
 
-	// var andTheWinnerIs = function(winner) {
-	// 	if(winner === 'Draw')
-	// 		$('#result').text("It's a " + Draw.type)
-	// 	else
-	// 		$('#result').text("The winner is " + winner.type)
-	// };
 
-$('#rock').on('click', function(){
-	andTheWinnerIs(decideWinner(new Rock));
-})
+var playerChoice = function(choice){
+	return options[$(choice).data('option')]
+}
 
-$('#paper').on('click', function(){
-	andTheWinnerIs(decideWinner(new Paper));
-})
-
-$('#scissors').on('click', function(){
-	andTheWinnerIs(decideWinner(new Scissors));
+$('img').on('click', function(){
+	andTheWinnerIs(decideWinner(playerChoice(this)))
 })
