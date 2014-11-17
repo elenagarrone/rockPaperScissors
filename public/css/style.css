@@ -4,15 +4,23 @@ body {
     margin 15px 0 0 30px;
 }
 
+h1 {
+	display:inline;
+}
+
 section#title {
-	font-family: "TARJustAMonday", Helvetica, Arial, sans-serif ;
+	margin-top: 4%;
+	font-family: 'Josefin Slab', serif;
 	color: #be422e;
 	font-size: 25px;
 	text-align: center;
 }
 
-.choices img {
-	margin-top: 5%;
+section {
+	margin-top: 6%;
+}
+
+.choices img#rock {
 	width: 15%;
 	margin-right: 5%;
 	margin-left: auto;
@@ -21,12 +29,30 @@ section#title {
 	transition: opacity 0.5s ease;
 }
 
+.choices img#paper {
+	width: 15%;
+	margin-right: 5%;
+	margin-left: auto;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.5s ease;
+}
+
+.choices img#scissors {
+	width: 15%;
+	margin-left: auto;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.5s ease;
+}
+
+
 .choices img:hover {
 	opacity: 1;
 }
 
 #result {
-	font-family: "TARJustAMonday", Helvetica, Arial, sans-serif ;
+	font-family: 'Josefin Slab', serif;
 	color: #be422e;
 	font-size: 18px;
 	text-align: center;
