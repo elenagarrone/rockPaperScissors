@@ -29,6 +29,10 @@ section {
 	transition: opacity 0.5s ease;
 }
 
+.choices img#rock:hover {
+	opacity: 1;
+}
+
 .choices img#paper {
 	width: 15%;
 	margin-right: 5%;
@@ -36,6 +40,10 @@ section {
 	cursor: pointer;
 	opacity: 0.6;
 	transition: opacity 0.5s ease;
+}
+
+.choices img#paper:hover {
+	opacity: 1;
 }
 
 .choices img#scissors {
@@ -46,8 +54,7 @@ section {
 	transition: opacity 0.5s ease;
 }
 
-
-.choices img:hover {
+.choices img#scissors:hover {
 	opacity: 1;
 }
 
