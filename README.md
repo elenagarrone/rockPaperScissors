@@ -4,6 +4,8 @@ Rock, paper, scissors built in JavaScript during week 5 at Makers Academy.
 
 <img src='http://i59.tinypic.com/oiur7c.png'>
 
+Try it here: https://rockpaperscissorselena.herokuapp.com/
+
 Technologies:
 ---------------
 - Javascript
