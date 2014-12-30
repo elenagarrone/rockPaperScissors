@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/elenagarrone/rockPaperScissors-JS/badges/gpa.svg)](https://codeclimate.com/github/elenagarrone/rockPaperScissors-JS)
+
 Rock Paper Scissors
 =================
 Rock, paper, scissors built in JavaScript during week 5 at Makers Academy.
