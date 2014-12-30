@@ -49,5 +49,5 @@ How to test it:
 --------------
 Run:
 ```shell
-open SpecRunner.html
+$ open SpecRunner.html
 ```
