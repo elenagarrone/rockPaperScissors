@@ -1,70 +1,69 @@
 body {
-	background-color: #c5d9ba;
-    /*background-color: #b0c4de;*/
-    margin 15px 0 0 30px;
+  background-color: #c5d9ba;
+  margin 15px 0 0 30px;
 }
 
 h1 {
-	display:inline;
+  display:inline;
 }
 
 section#title {
-	margin-top: 4%;
-	font-family: 'Josefin Slab', serif;
-	color: #be422e;
-	font-size: 25px;
-	text-align: center;
+  margin-top: 4%;
+  font-family: 'Josefin Slab', serif;
+  color: #be422e;
+  font-size: 25px;
+  text-align: center;
 }
 
 section {
-	margin-top: 6%;
+  margin-top: 6%;
 }
 
 .choices img#rock {
-	width: 15%;
-	margin-right: 5%;
-	margin-left: auto;
-	cursor: pointer;
-	opacity: 0.6;
-	transition: opacity 0.5s ease;
+  width: 15%;
+  margin-right: 5%;
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
 }
 
 .choices img#rock:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .choices img#paper {
-	width: 15%;
-	margin-right: 5%;
-	margin-left: auto;
-	cursor: pointer;
-	opacity: 0.6;
-	transition: opacity 0.5s ease;
+  width: 15%;
+  margin-right: 5%;
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
 }
 
 .choices img#paper:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .choices img#scissors {
-	width: 15%;
-	margin-left: auto;
-	cursor: pointer;
-	opacity: 0.6;
-	transition: opacity 0.5s ease;
+  width: 15%;
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
 }
 
 .choices img#scissors:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 #result {
-	font-family: 'Josefin Slab', serif;
-	color: #be422e;
-	font-size: 18px;
-	text-align: center;
+  font-family: 'Josefin Slab', serif;
+  color: #be422e;
+  font-size: 18px;
+  text-align: center;
 }
 
 section#showresult {
-	margin-top: 5%;
+  margin-top: 5%;
 }
