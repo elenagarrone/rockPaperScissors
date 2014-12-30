@@ -26,11 +26,11 @@ How to use:
 -----------
 Clone the repo:
 ```shell
-$ git clone https://github.com/elenagarrone/rockPaperScissors.git
+$ git clone https://github.com/elenagarrone/rockPaperScissors-JS.git
 ```
 Change into the directory:
 ```shell
-$ cd rockPaperScissors
+$ cd rockPaperScissors-JS
 ```
 Install the gems:
 ```shell
