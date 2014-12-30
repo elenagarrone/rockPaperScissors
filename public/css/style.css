@@ -1,69 +1,33 @@
 body {
   background-color: #c5d9ba;
-  margin 15px 0 0 30px;
-}
-
-h1 {
-  display:inline;
+  font-family: 'Josefin Slab', serif;
+  color: #be422e;
 }
 
 section#title {
-  margin-top: 4%;
-  font-family: 'Josefin Slab', serif;
-  color: #be422e;
-  font-size: 25px;
+  margin: 4% 0% 6% 0%;
+  font-size: 235%;
   text-align: center;
 }
 
-section {
-  margin-top: 6%;
-}
-
-.choices img#rock {
-  width: 15%;
-  margin-right: 5%;
-  margin-left: auto;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.5s ease;
-}
-
-.choices img#rock:hover {
-  opacity: 1;
-}
-
-.choices img#paper {
-  width: 15%;
-  margin-right: 5%;
-  margin-left: auto;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.5s ease;
-}
-
-.choices img#paper:hover {
-  opacity: 1;
-}
-
-.choices img#scissors {
-  width: 15%;
-  margin-left: auto;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.5s ease;
-}
-
-.choices img#scissors:hover {
-  opacity: 1;
-}
-
-#result {
-  font-family: 'Josefin Slab', serif;
-  color: #be422e;
-  font-size: 18px;
+section#choices {
   text-align: center;
+}
+
+section#choices img {
+  width: 15%;
+	margin: auto 2.5% auto 2.5%;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+
+section#choices img:hover {
+  opacity: 1;
 }
 
 section#showresult {
-  margin-top: 5%;
+  margin: 5% 0% 0% 0%;
+	font-size: 120%;
+  text-align: center;
 }
