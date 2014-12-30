@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<body>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  </head>
 
-		<head>
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-		</head>
+  <body>
+    <section id="title">
+      <h1>ROCK / PAPER / SCISSORS</h1>
+    </section>
 
-		<section id="title">
-			<h1>ROCK / PAPER / SCISSORS</h1>
-		</section>
+    <section class="choices">
+      <center>
+        <IMG id='rock' data-option="rock" SRC="images/rock.png" ALT="Image of a hand with a clanched fist">
+        <IMG id='paper' data-option="paper"SRC="images/paper.png" ALT="Image of a hand">
+        <IMG id='scissors' data-option="scissors"SRC="images/scissors.png" ALT="Image of a hand making scissors" allign="middle">
+      </center>
+    </section>
 
-		<section class="choices">
-			<center>
-					<IMG id='rock' data-option="rock" SRC="images/rock.png" ALT="Image of a hand with a clanched fist">
-					<IMG id='paper' data-option="paper"SRC="images/paper.png" ALT="Image of a hand">
-					<IMG id='scissors' data-option="scissors"SRC="images/scissors.png" ALT="Image of a hand making scissors" allign="middle">
-			</center>
-		</section>
+    <section id="showresult">
+      <h2 id="result"></h2>
+    </section>
 
-		<section id="showresult">	
-				<h2 id="result"></h2>
-		</section>
-
-		  	<script type="text/javascript" src="rockPaperScissors.js"></script>
-			<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-			<script type="text/javascript" src="game.js"></script>
-	</body>
+    <script type="text/javascript" src="rockPaperScissors.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
 </html>
-

@@ -17,7 +17,6 @@ var andTheWinnerIs = function(winner) {
     $('#result').prepend('It was a draw');
     $('#result').prepend('<li></li>');
   };
-
 };
 
 var playerChoice = function(choice){

@@ -2,10 +2,12 @@ function Rock(owner){
   this.type = 'Rock'
   this.owner = owner;
 };
+
 function Scissors(owner){
   this.type = 'Scissors'
   this.owner = owner;
 };
+
 function Paper(owner){
   this.type = 'Paper'
   this.owner = owner;
@@ -26,7 +28,7 @@ Game.prototype.winner= function(choice1, choice2) {
 
 Game.prototype.messageWin = function(winChoice) {
   if(winChoice.owner === 'player') winnerName = 'You'
-  if(winChoice.owner === 'computer') winnerName = 'The computer'	
+  if(winChoice.owner === 'computer') winnerName = 'The computer'
   if(winChoice.type === 'Rock') winningAction = 'Rock destroys scissors';
   if(winChoice.type === 'Scissors') winningAction = 'Scissors cuts paper';
   if(winChoice.type === 'Paper') winningAction = 'Paper covers rock';
