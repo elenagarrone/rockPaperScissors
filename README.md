@@ -4,7 +4,7 @@ Rock Paper Scissors
 =================
 Rock, paper, scissors built in JavaScript during week 5 at Makers Academy.
 
-<img src='http://i59.tinypic.com/oiur7c.png'>
+<img src='public/images/RPS.png'>
 
 Specification:
 -------------
